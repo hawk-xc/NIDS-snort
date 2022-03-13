@@ -91,3 +91,8 @@ yum install epel-release bison flex gcc make libdnet libdnet-devel libpcap wget 
  systemctl start snortd
  systemctl status snortd
  ```
+ 
+ run snort in console mode
+ ```bash
+ snort -A console -q -c /etc/snort/snort.conf -i ens33
+ ```
