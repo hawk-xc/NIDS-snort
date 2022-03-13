@@ -85,3 +85,9 @@ yum install epel-release bison flex gcc make libdnet libdnet-devel libpcap wget 
  ```
  alert icmp any any -> any any (msg:"WARNING!!! ICMP PACKET DETECTED"; sid:10001; rev:1001;)
  ```
+ 
+ ```bash
+ systemctl enable snortd
+ systemctl start snortd
+ systemctl status snortd
+ ```
